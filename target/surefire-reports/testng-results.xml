@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[<a href='/Users/sakirsahin/IdeaProjects/TestNGFramework/screenshots/passed/invalidCredentials2022-05-17-12-53-06.png'> <img src='/Users/sakirsahin/IdeaProjects/TestNGFramework/screenshots/passed/invalidCredentials2022-05-17-12-53-06.png' height='100' width='200'/> </a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href='/Users/sakirsahin/IdeaProjects/TestNGFramework/screenshots/passed/invalidCredentials2022-05-17-12-53-10.png'> <img src='/Users/sakirsahin/IdeaProjects/TestNGFramework/screenshots/passed/invalidCredentials2022-05-17-12-53-10.png' height='100' width='200'/> </a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href='/Users/sakirsahin/IdeaProjects/TestNGFramework/screenshots/passed/invalidCredentials2022-05-17-12-53-14.png'> <img src='/Users/sakirsahin/IdeaProjects/TestNGFramework/screenshots/passed/invalidCredentials2022-05-17-12-53-14.png' height='100' width='200'/> </a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href='/Users/sakirsahin/IdeaProjects/TestNGFramework/screenshots/passed/invalidCredentials2022-05-17-12-53-18.png'> <img src='/Users/sakirsahin/IdeaProjects/TestNGFramework/screenshots/passed/invalidCredentials2022-05-17-12-53-18.png' height='100' width='200'/> </a>]]>
+    </line>
+    <line>
+      <![CDATA[<a href='/Users/sakirsahin/IdeaProjects/TestNGFramework/screenshots/passed/logoIsPresent2022-05-17-12-53-23.png'> <img src='/Users/sakirsahin/IdeaProjects/TestNGFramework/screenshots/passed/logoIsPresent2022-05-17-12-53-23.png' height='100' width='200'/> </a>]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2022-05-17T12:52:59 HST" name="All Test Suite" finished-at="2022-05-17T12:53:23 HST" duration-ms="23865">
+    <groups>
+    </groups>
+    <test started-at="2022-05-17T12:52:59 HST" name="/Users/sakirsahin/IdeaProjects/TestNGFramework/src/test" finished-at="2022-05-17T12:53:23 HST" duration-ms="23865">
+      <class name="test.LoginTest">
+        <test-method is-config="true" signature="openBrowserAndLaunchApplication()[pri:0, instance:test.LoginTest@2a32de6c]" started-at="2022-05-17T12:52:59 HST" name="openBrowserAndLaunchApplication" finished-at="2022-05-17T12:53:04 HST" duration-ms="4563" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowserAndLaunchApplication -->
+        <test-method signature="invalidCredentials(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.LoginTest@2a32de6c]" started-at="2022-05-17T12:53:04 HST" name="invalidCredentials" data-provider="Credentials" finished-at="2022-05-17T12:53:05 HST" duration-ms="911" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[abc]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Invalid credentials]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<a href='/Users/sakirsahin/IdeaProjects/TestNGFramework/screenshots/passed/invalidCredentials2022-05-17-12-53-06.png'> <img src='/Users/sakirsahin/IdeaProjects/TestNGFramework/screenshots/passed/invalidCredentials2022-05-17-12-53-06.png' height='100' width='200'/> </a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- invalidCredentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.LoginTest@2a32de6c]" started-at="2022-05-17T12:53:06 HST" name="tearDown" finished-at="2022-05-17T12:53:06 HST" duration-ms="121" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="openBrowserAndLaunchApplication()[pri:0, instance:test.LoginTest@2a32de6c]" started-at="2022-05-17T12:53:06 HST" name="openBrowserAndLaunchApplication" finished-at="2022-05-17T12:53:09 HST" duration-ms="2868" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowserAndLaunchApplication -->
+        <test-method signature="invalidCredentials(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.LoginTest@2a32de6c]" started-at="2022-05-17T12:53:09 HST" name="invalidCredentials" data-provider="Credentials" finished-at="2022-05-17T12:53:09 HST" duration-ms="593" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[A]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Hum@nhrm123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Invalid credentials]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<a href='/Users/sakirsahin/IdeaProjects/TestNGFramework/screenshots/passed/invalidCredentials2022-05-17-12-53-10.png'> <img src='/Users/sakirsahin/IdeaProjects/TestNGFramework/screenshots/passed/invalidCredentials2022-05-17-12-53-10.png' height='100' width='200'/> </a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- invalidCredentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.LoginTest@2a32de6c]" started-at="2022-05-17T12:53:10 HST" name="tearDown" finished-at="2022-05-17T12:53:10 HST" duration-ms="114" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="openBrowserAndLaunchApplication()[pri:0, instance:test.LoginTest@2a32de6c]" started-at="2022-05-17T12:53:10 HST" name="openBrowserAndLaunchApplication" finished-at="2022-05-17T12:53:13 HST" duration-ms="2901" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowserAndLaunchApplication -->
+        <test-method signature="invalidCredentials(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.LoginTest@2a32de6c]" started-at="2022-05-17T12:53:13 HST" name="invalidCredentials" data-provider="Credentials" finished-at="2022-05-17T12:53:13 HST" duration-ms="204" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Password cannot be empty]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<a href='/Users/sakirsahin/IdeaProjects/TestNGFramework/screenshots/passed/invalidCredentials2022-05-17-12-53-14.png'> <img src='/Users/sakirsahin/IdeaProjects/TestNGFramework/screenshots/passed/invalidCredentials2022-05-17-12-53-14.png' height='100' width='200'/> </a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- invalidCredentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.LoginTest@2a32de6c]" started-at="2022-05-17T12:53:14 HST" name="tearDown" finished-at="2022-05-17T12:53:14 HST" duration-ms="161" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="openBrowserAndLaunchApplication()[pri:0, instance:test.LoginTest@2a32de6c]" started-at="2022-05-17T12:53:14 HST" name="openBrowserAndLaunchApplication" finished-at="2022-05-17T12:53:17 HST" duration-ms="2844" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowserAndLaunchApplication -->
+        <test-method signature="invalidCredentials(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test.LoginTest@2a32de6c]" started-at="2022-05-17T12:53:17 HST" name="invalidCredentials" data-provider="Credentials" finished-at="2022-05-17T12:53:17 HST" duration-ms="279" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Hum@nhrm123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Username cannot be empty]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<a href='/Users/sakirsahin/IdeaProjects/TestNGFramework/screenshots/passed/invalidCredentials2022-05-17-12-53-18.png'> <img src='/Users/sakirsahin/IdeaProjects/TestNGFramework/screenshots/passed/invalidCredentials2022-05-17-12-53-18.png' height='100' width='200'/> </a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- invalidCredentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.LoginTest@2a32de6c]" started-at="2022-05-17T12:53:18 HST" name="tearDown" finished-at="2022-05-17T12:53:18 HST" duration-ms="119" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="openBrowserAndLaunchApplication()[pri:0, instance:test.LoginTest@2a32de6c]" started-at="2022-05-17T12:53:18 HST" name="openBrowserAndLaunchApplication" finished-at="2022-05-17T12:53:23 HST" duration-ms="4475" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowserAndLaunchApplication -->
+        <test-method signature="logoIsPresent()[pri:0, instance:test.LoginTest@2a32de6c]" started-at="2022-05-17T12:53:23 HST" name="logoIsPresent" finished-at="2022-05-17T12:53:23 HST" duration-ms="39" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[<a href='/Users/sakirsahin/IdeaProjects/TestNGFramework/screenshots/passed/logoIsPresent2022-05-17-12-53-23.png'> <img src='/Users/sakirsahin/IdeaProjects/TestNGFramework/screenshots/passed/logoIsPresent2022-05-17-12-53-23.png' height='100' width='200'/> </a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- logoIsPresent -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.LoginTest@2a32de6c]" started-at="2022-05-17T12:53:23 HST" name="tearDown" finished-at="2022-05-17T12:53:23 HST" duration-ms="122" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.LoginTest -->
+    </test> <!-- /Users/sakirsahin/IdeaProjects/TestNGFramework/src/test -->
+  </suite> <!-- All Test Suite -->
+</testng-results>
