@@ -31,6 +31,7 @@ public class LoginTest extends TestBase {
     @Test(groups = "regression")
     public void logoIsPresent() {
         LoginPage loginPage=new LoginPage();
+
         boolean isDisplayed = loginPage.logo.isDisplayed();
 
         SoftAssert softAssert = new SoftAssert();
@@ -40,8 +41,8 @@ public class LoginTest extends TestBase {
 
     @Test(dataProvider = "Credentials", groups = "regression")
     public void invalidCredentials(String username, String password, String expectedMessage) {
-
         LoginPage loginPage=new LoginPage();
+
         loginPage.usernameField.sendKeys(username);
         loginPage.passwordField.sendKeys(password);
         loginPage.loginButton.click();

@@ -4,7 +4,7 @@
     <listeners>
         <listener class-name="utils.Listener"/>
     </listeners>
-    <test verbose="2" preserve-order="true" name="/Users/sakirsahin/IdeaProjects/TestNGFramework/src/test" parallel="methods" thread-count="3">
+    <test verbose="2" preserve-order="true" name="ParallelTesting" parallel="methods" thread-count="3">
         <groups>
             <run>
                 <include name="regression"/>

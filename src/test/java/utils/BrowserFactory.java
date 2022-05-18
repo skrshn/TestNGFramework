@@ -6,6 +6,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import testBase.TestBase;
 
+import java.util.concurrent.TimeUnit;
+
 public class BrowserFactory{
     private BrowserFactory() {
     }
@@ -27,7 +29,9 @@ public class BrowserFactory{
             WebDriverManager.chromedriver().setup();
             driver.set(new ChromeDriver());
             driver.get().manage().window().maximize();
+            driver.get().manage().timeouts().implicitlyWait(Constants.IMPLICIT_WAIT, TimeUnit.SECONDS);
         }
+
     }
 
     public static void closeBrowser() {

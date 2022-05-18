@@ -25,7 +25,6 @@ public class AddEmployeeTest extends TestBase {
         EmployeeSearchPage emSearchPage= new EmployeeSearchPage();
         AddEmployeePage emAddPage = new AddEmployeePage();
 
-
         loginPage.loginMethod(ConfigReader.getPropertyValue("username"), ConfigReader.getPropertyValue("password"));
 
         CommonMethods.click(dashboardPage.pimOption);
@@ -42,7 +41,6 @@ public class AddEmployeeTest extends TestBase {
             String empID = emAddPage.employeeID.getAttribute("value");
 
             CommonMethods.click(emAddPage.saveButton);
-            //CommonMethods.click(dashboardPage.addEmpOption);
 
             CommonMethods.click(dashboardPage.pimOption);
             CommonMethods.click(dashboardPage.empListOption);

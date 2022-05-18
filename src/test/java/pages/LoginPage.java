@@ -38,6 +38,8 @@ public class LoginPage extends CommonMethods {
     }
 
     public void loginMethod(String username, String password) {
+        LoginPage loginPage=new LoginPage();
+
         CommonMethods.sendText(usernameField, username);
         CommonMethods.sendText(passwordField, password);
         CommonMethods.click(loginPage.loginButton);
