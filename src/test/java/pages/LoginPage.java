@@ -3,6 +3,7 @@ package pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import utils.BrowserFactory;
 import utils.CommonMethods;
 
 public class LoginPage extends CommonMethods {
@@ -33,7 +34,7 @@ public class LoginPage extends CommonMethods {
     public WebElement errorMessage;
 
     public LoginPage() {
-        PageFactory.initElements(driver, this);
+        PageFactory.initElements(BrowserFactory.getDriver(), this);
     }
 
     public void loginMethod(String username, String password) {

@@ -26,7 +26,7 @@ public class CommonMethods extends TestBase {
     }
 
     public static WebDriverWait getWait() {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(Constants.EXPLICIT_WAIT));
+        WebDriverWait wait = new WebDriverWait(BrowserFactory.getDriver(), Duration.ofSeconds(Constants.EXPLICIT_WAIT));
         return wait;
     }
 
@@ -40,7 +40,7 @@ public class CommonMethods extends TestBase {
     }
 
     public static JavascriptExecutor getJSExecutor() {
-        JavascriptExecutor js = (JavascriptExecutor) driver;
+        JavascriptExecutor js = (JavascriptExecutor) BrowserFactory.getDriver();
         return js;
     }
 
@@ -54,12 +54,12 @@ public class CommonMethods extends TestBase {
     }
 
     public static void takeScreenShot(String fileName) {
-        File sourceFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        File sourceFile = ((TakesScreenshot) BrowserFactory.getDriver()).getScreenshotAs(OutputType.FILE);
 
         File destFile = new File(Constants.SCREENSHOT_FILEPATH + fileName + getTimeStamp("yyyy-MM-dd-HH-mm-ss") + ".png");
         try {
             FileUtils.copyFile(sourceFile, destFile);
-            Reporter.log("<a href='" + destFile.getAbsolutePath() + "'> <img src='" + destFile.getAbsolutePath() + "' height='100' width='200'/> </a>");
+            Reporter.log("<a href='" + destFile.getAbsolutePath() + "'> <img src='" + destFile.getAbsolutePath() + "' height='100' width='250'/> </a>");
         } catch (IOException e) {
             e.printStackTrace();
         }

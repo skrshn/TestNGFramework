@@ -6,6 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import utils.BrowserFactory;
 import utils.ConfigReader;
 import utils.Constants;
 import utils.PageInitializers;
@@ -13,33 +14,29 @@ import utils.PageInitializers;
 import java.util.concurrent.TimeUnit;
 
 public class TestBase extends PageInitializers {
-    public static WebDriver driver;
-
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void openBrowserAndLaunchApplication() {
         ConfigReader.readProperties(Constants.CONFIGURATION_FILEPATH);
+
         switch (ConfigReader.getPropertyValue("browser")) {
             case "chrome":
-                WebDriverManager.chromedriver().setup();
-                driver = new ChromeDriver();
+                BrowserFactory.setDriver("chrome");
                 break;
             case "firefox":
-                WebDriverManager.firefoxdriver().setup();
-                driver = new FirefoxDriver();
+                BrowserFactory.setDriver("firefox");
                 break;
             default:
                 throw new RuntimeException("Invalid browser name");
         }
-        driver.get(ConfigReader.getPropertyValue("url"));
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Constants.IMPLICIT_WAIT, TimeUnit.SECONDS);
+        BrowserFactory.getDriver().get(ConfigReader.getPropertyValue("url"));
+        BrowserFactory.getDriver().manage().timeouts().implicitlyWait(Constants.IMPLICIT_WAIT, TimeUnit.SECONDS);
         initializePageObjects();
     }
 
-    @AfterMethod
+    @AfterMethod(alwaysRun = true)
     public void tearDown() {
-        if (driver != null) {
-            driver.quit();
+        if (BrowserFactory.getDriver() != null) {
+            BrowserFactory.closeBrowser();
         }
     }
 }

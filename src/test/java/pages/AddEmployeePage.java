@@ -3,6 +3,7 @@ package pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import utils.BrowserFactory;
 import utils.CommonMethods;
 
 public class AddEmployeePage extends CommonMethods {
@@ -44,6 +45,6 @@ public class AddEmployeePage extends CommonMethods {
     public WebElement employeeStatus;
 
     public AddEmployeePage() {
-        PageFactory.initElements(driver, this);
+        PageFactory.initElements(BrowserFactory.getDriver(), this);
     }
 }

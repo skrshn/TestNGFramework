@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="utils.Listener"/>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="/Users/sakirsahin/IdeaProjects/TestNGFramework/src/test" parallel="methods" thread-count="3">
+        <groups>
+            <run>
+                <include name="regression"/>
+            </run>
+        </groups>
+        <packages>
+            <package name="test"/>
+        </packages>
+    </test>
+</suite>

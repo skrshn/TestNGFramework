@@ -3,8 +3,19 @@ package test;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
+import pages.AddEmployeePage;
+import pages.DashboardPage;
+import pages.EmployeeSearchPage;
+import pages.LoginPage;
 import testBase.TestBase;
 import utils.CommonMethods;
+import utils.ConfigReader;
+import utils.Constants;
+import utils.ExcelReader;
+
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
 
 public class LoginTest extends TestBase {
 
@@ -17,17 +28,20 @@ public class LoginTest extends TestBase {
         };
     }
 
-    @Test
+    @Test(groups = "regression")
     public void logoIsPresent() {
+        LoginPage loginPage=new LoginPage();
         boolean isDisplayed = loginPage.logo.isDisplayed();
 
         SoftAssert softAssert = new SoftAssert();
         softAssert.assertTrue(isDisplayed);
-        softAssert.assertAll();
+        //softAssert.assertAll();
     }
 
-    @Test(dataProvider = "Credentials")
+    @Test(dataProvider = "Credentials", groups = "regression")
     public void invalidCredentials(String username, String password, String expectedMessage) {
+
+        LoginPage loginPage=new LoginPage();
         loginPage.usernameField.sendKeys(username);
         loginPage.passwordField.sendKeys(password);
         loginPage.loginButton.click();

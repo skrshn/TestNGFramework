@@ -3,6 +3,7 @@ package pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import utils.BrowserFactory;
 import utils.CommonMethods;
 
 import java.util.List;
@@ -25,6 +26,6 @@ public class DashboardPage extends CommonMethods {
     public WebElement addEmpOption;
 
     public DashboardPage() {
-        PageFactory.initElements(driver,this);
+        PageFactory.initElements(BrowserFactory.getDriver(),this);
     }
 }

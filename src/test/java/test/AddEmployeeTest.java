@@ -1,7 +1,12 @@
 package test;
 
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
+import pages.AddEmployeePage;
+import pages.DashboardPage;
+import pages.EmployeeSearchPage;
+import pages.LoginPage;
 import testBase.TestBase;
 import utils.CommonMethods;
 import utils.ConfigReader;
@@ -13,8 +18,14 @@ import java.util.List;
 import java.util.Map;
 
 public class AddEmployeeTest extends TestBase {
-    @Test
+    @Test(groups ="regression")
     public void addEmployee() {
+        LoginPage loginPage=new LoginPage();
+        DashboardPage dashboardPage=new DashboardPage();
+        EmployeeSearchPage emSearchPage= new EmployeeSearchPage();
+        AddEmployeePage emAddPage = new AddEmployeePage();
+
+
         loginPage.loginMethod(ConfigReader.getPropertyValue("username"), ConfigReader.getPropertyValue("password"));
 
         CommonMethods.click(dashboardPage.pimOption);

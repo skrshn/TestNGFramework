@@ -3,6 +3,7 @@ package pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import utils.BrowserFactory;
 import utils.CommonMethods;
 
 public class EmployeeSearchPage extends CommonMethods {
@@ -19,9 +20,7 @@ public class EmployeeSearchPage extends CommonMethods {
     @FindBy(xpath = "//*[@id='resultTable']/tbody/tr/td[2]/a")
     public WebElement verifyEmployeeAddedField;
 
-
-
     public EmployeeSearchPage() {
-        PageFactory.initElements(driver,this);
+        PageFactory.initElements(BrowserFactory.getDriver(),this);
     }
 }

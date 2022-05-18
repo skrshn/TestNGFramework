@@ -6,6 +6,7 @@ utils/ConfigReader.class
 utils/Constants.class
 utils/ExcelReader.class
 pages/EmployeeSearchPage.class
+utils/BrowserFactory.class
 testBase/TestBase.class
 utils/Listener.class
 pages/LoginPage.class
