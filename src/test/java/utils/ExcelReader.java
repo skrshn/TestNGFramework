@@ -60,5 +60,18 @@ public class ExcelReader {
         return ListData;
     }
 
+    public static String[][] getExcelData(String filePath, String sheetName) {
+        openExcel(filePath);
+        getSheet(sheetName);
 
+        String[][] arrayExcelData = null;
+        arrayExcelData = new String[getRowCount()-1][getColsCount(getRowCount()-1)];
+
+        for (int i = 1; i < getRowCount(); i++) {
+            for (int j = 0; j < getColsCount(i); j++) {
+                arrayExcelData[i-1][j] = getCellData(i, j);
+            }
+        }
+        return arrayExcelData;
+    }
 }
