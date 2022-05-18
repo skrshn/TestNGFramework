@@ -27,11 +27,15 @@ public class BrowserFactory{
 
     public static void setDriver(String browserType) {
         if (browserType.equalsIgnoreCase("chrome")) {
+            ChromeOptions options = new ChromeOptions();
+            options.addArguments("headless");
+            options.addArguments("--window-size=1440x900");
             WebDriverManager.chromedriver().setup();
-            driver.set(new ChromeDriver());
+            driver.set(new ChromeDriver(options));
             driver.get().manage().window().maximize();
             driver.get().manage().timeouts().implicitlyWait(Constants.IMPLICIT_WAIT, TimeUnit.SECONDS);
         }
+
     }
 
     public static void closeBrowser() {
